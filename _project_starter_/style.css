@@ -1,0 +1,29 @@
+/* Google Font Source */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* Font Family Settings */
+    font-family: 'Roboto', sans-serif;
+
+    /* Centering on page */
+
+    display: flex; /* enables flexbox */
+
+    flex-direction: column; /* sets elements vertical */
+
+    align-items: center; /* center left to right on column set flex direction */
+
+    justify-content: center; /* centers it vertically */
+
+    height: 100vh; /* gives our body a height so it can center vertically */
+
+    overflow: hidden; /* hides the scrollbar */
+
+    margin: 0; /* distributes margin equally on either side */
+}
+
+/* ======================================================== */
