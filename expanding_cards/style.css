@@ -6,22 +6,13 @@
 }
 
 body {
-    /* Font Family Settings */
-    font-family: 'muli', sans-serif;
-
-    /* Centering on page */
-
-    display: flex; /* enables flexbox */
-
-    align-items: center; /* center left to right on column set flex direction */
-
-    justify-content: center; /* centers it vertically */
-
-    height: 100vh; /* gives our body a height so it can center vertically */
-
-    overflow: hidden; /* hides the scrollbar */
-
-    margin: 0; /* distributes margin equally on either side */
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
 }
 
 /* ======================================================== */
@@ -55,7 +46,7 @@ body {
 }
 
 .panel.active {
-    flex: 5;
+    flex: 6;
 }
 
 .panel.active h3 {
