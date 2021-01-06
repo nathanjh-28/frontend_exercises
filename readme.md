@@ -1,7 +1,7 @@
 # Front End Practice Projects
 This repository is dedicated to daily practice of front end development to keep muscles in shape and to learn new techniques.  
 
-### 50 Projects 50 Days
+### [50 Projects 50 Days](https://www.udemy.com/course/50-projects-50-days/)
 ---
 
 Jan 6, 2021
