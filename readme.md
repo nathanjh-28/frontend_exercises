@@ -7,7 +7,9 @@ This repository is dedicated to daily practice of front end development to keep 
 
 Jan 7, 2021
 
-9. [Dad Jokes](https://nathanjh-28.github.io/frontend_exercises/dad_jokes/index.html)
+11. [Event Key Codes](https://nathanjh-28.github.io/frontend_exercises/event_key_codes/index.html)
+
+10. [Dad Jokes](https://nathanjh-28.github.io/frontend_exercises/dad_jokes/index.html)
 
 Jan 6, 2021
 
