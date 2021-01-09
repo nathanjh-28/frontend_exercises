@@ -4,6 +4,8 @@ const fp = []; const ap = [];
 
 // ________________________________________________________PROJECTS DATA
 
+// TEMPLATE - (  [  DATE  ,  DIRNAME  ,  TITLE  ]  )
+
 fp.push(['Jan 9, 2021','FAQ_collapse','FAQ Collapse']);
 fp.push(['Jan 8, 2021','event_key_codes','Event Key Codes']);
 fp.push(['Jan 7, 2021','dad_jokes','Dad Jokes']);
