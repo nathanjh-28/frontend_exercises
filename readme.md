@@ -6,7 +6,7 @@ This repository is dedicated to daily practice of front end development to keep 
 
 Jan 11, 2021
 
-12. [Random Choice Picker](https://nathanjh-28.github.io/frontend_exercises/random_choice_picker/index.html)
+13. [Random Choice Picker](https://nathanjh-28.github.io/frontend_exercises/random_choice_picker/index.html)
 
 
 Jan 9, 2021
@@ -65,4 +65,6 @@ Dec 29, 2020
 ### [Responsive Web Design Course](https://www.udemy.com/course/modern-html-css-from-the-beginning/)
 
 ---
-- [Hotel Website](https://nathanjh-28.github.io/expanding_cards/hotel_website/index.html) 
+- [Hotel Website](https://nathanjh-28.github.io/hotel_website/hotel_website/index.html) 
+
+- [Edge Ledger](https://nathanjh-28.github.io/edge_ledger/hotel_website/index.html) 
