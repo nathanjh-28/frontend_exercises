@@ -6,6 +6,7 @@ const fp = []; const ap = [];
 
 // TEMPLATE - (  [  DATE  ,  DIRNAME  ,  TITLE  ]  )
 
+fp.push(['Jan 12, 2021','animated_navigation','Animated Navigation']);
 fp.push(['Jan 11, 2021','random_choice_picker','Random Choice Picker']);
 fp.push(['Jan 9, 2021','FAQ_collapse','FAQ Collapse']);
 fp.push(['Jan 8, 2021','event_key_codes','Event Key Codes']);

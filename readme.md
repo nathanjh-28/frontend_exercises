@@ -4,6 +4,11 @@ This repository is dedicated to daily practice of front end development to keep 
 ### [50 Projects 50 Days](https://www.udemy.com/course/50-projects-50-days/)
 ---
 
+Jan 12, 2021
+
+14. [Animated Navigation](https://nathanjh-28.github.io/frontend_exercises/animated_navigation/index.html)
+
+
 Jan 11, 2021
 
 13. [Random Choice Picker](https://nathanjh-28.github.io/frontend_exercises/random_choice_picker/index.html)

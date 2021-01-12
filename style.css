@@ -1,5 +1,11 @@
 h1, h2 {
-    color: #333;
+    color: #fff;
+    background-color: rgba(0,0,0,0.3);
+    padding: 10px 0 10px 0;
+    width: 80%;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 10px 0;
 }
 
 body {
@@ -8,7 +14,7 @@ body {
     background-color: #81C4E1;
     text-align: center;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 20px auto;
     color: #333;
 }
 a {
@@ -33,4 +39,12 @@ a {
     white-space: nowrap;
     min-width: 225px;
     width: 20%;
+}
+
+.box:hover{
+    background-color: #ededed;
+}
+
+.box a {
+    text-decoration: none;
 }
