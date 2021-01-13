@@ -1,4 +1,4 @@
-h1, h2 {
+h1, h2, h3 {
     color: #fff;
     background-color: rgba(0,0,0,0.3);
     padding: 10px 0 10px 0;
@@ -6,6 +6,16 @@ h1, h2 {
     border-radius: 10px;
     display: inline-block;
     margin: 10px 0;
+}
+
+h1, h3 {
+    background-color: transparent;
+    color: #333;
+    margin: 0;
+}
+
+h3 a:hover{
+    color: #fff;
 }
 
 body {
@@ -42,9 +52,13 @@ a {
 }
 
 .box:hover{
-    background-color: #ededed;
+    transform: scale(1.01);
 }
 
 .box a {
     text-decoration: none;
+}
+
+.box a:hover {
+    color: #81C4E1;
 }
