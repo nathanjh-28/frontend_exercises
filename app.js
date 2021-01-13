@@ -6,6 +6,7 @@ const fp = []; const ap = [];
 
 // TEMPLATE - (  [  DATE  ,  DIRNAME  ,  TITLE  ]  )
 
+fp.push(['Jan 13, 2021','increment_counter','Increment Counter']);
 fp.push(['Jan 12, 2021','animated_navigation','Animated Navigation']);
 fp.push(['Jan 11, 2021','random_choice_picker','Random Choice Picker']);
 fp.push(['Jan 9, 2021','FAQ_collapse','FAQ Collapse']);
@@ -29,7 +30,7 @@ fp.forEach((prjt,idx)=>{
     let el = document.createElement('div')
     el.classList.add('box')
     el.innerHTML = `<h4>${prjt[0]}</h4>
-    <h4><a href="${prjt[1]}/index.html">
+    <h4><a href="fp/${prjt[1]}/index.html">
     ${fp.length-idx}. ${prjt[2]}</a></h4>`
     pjtSection.appendChild(el)
 })
@@ -39,7 +40,7 @@ ap.forEach((prjt,idx)=>{
     let el = document.createElement('div')
     el.classList.add('box')
     el.innerHTML = `<h4>${prjt[0]}</h4>
-    <h4><a href="${prjt[1]}/index.html">
+    <h4><a href="ap/${prjt[1]}/index.html">
     ${prjt[2]}</a></h4>`
     addPrjts.appendChild(el)
 })
