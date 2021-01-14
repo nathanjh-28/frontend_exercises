@@ -23,6 +23,7 @@ fp.push(['Dec 31, 2020','rotating_navigation','Rotating Navigation']);
 fp.push(['Dec 30, 2020','progress_bar','Progress Bar']);
 fp.push(['Dec 29, 2020','expanding_cards','Expanding Cards']);
 
+ap.push(['Jan 14, 2021','task_list','Task List App'])
 ap.push(['Jan 10, 2021','edge_ledger','Edge Ledger Website'])
 ap.push(['Jan 2, 2021','hotel_website','Hotel Website'])
 
