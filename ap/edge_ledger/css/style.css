@@ -87,7 +87,7 @@ ___________________________________________________________________________ */
 ___________________________________________________________________________ */
 
 .hero {
-    background: url('../image_resources/home/showcase.jpg') no-repeat center center/cover;
+    background: url('../images/home/showcase.jpg') no-repeat center center/cover;
     height: 100vh;
     position: relative;
     color: #fff;
@@ -133,7 +133,7 @@ ___________________________________________________________________________ */
 }
 
 .hero.blog {
-    background: url('../image_resources/home/blog.jpg') no-repeat center center/cover;
+    background: url('../images/home/blog.jpg') no-repeat center center/cover;
     height: 30vh;
 }
 
