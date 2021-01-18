@@ -6,6 +6,7 @@ const fp = []; const ap = [];
 
 // TEMPLATE - (  [  DATE  ,  DIRNAME  ,  TITLE  ]  )
 
+fp.push(['Jan 18, 2021','button_ripple_effect','Button Ripple Effect']);
 fp.push(['Jan 17, 2021','theme_clock','Theme Clock']);
 fp.push(['Jan 16, 2021','background_slider','Background Slider']);
 fp.push(['Jan 15, 2021','movie_app','Movie App']);
