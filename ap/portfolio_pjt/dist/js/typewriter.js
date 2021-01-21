@@ -1,3 +1,6 @@
+
+// This was taken from the udemy course since the focus on this project is CSS and SASS not JS.
+
 class TypeWriter {
   constructor(txtElement, words, wait = 3000) {
     this.txtElement = txtElement;
