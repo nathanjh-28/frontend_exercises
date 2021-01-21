@@ -1,0 +1,14 @@
+{
+  "name": "portfolio_practice_pjt",
+  "version": "1.0.0",
+  "description": "practice prjt on udemy course",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
