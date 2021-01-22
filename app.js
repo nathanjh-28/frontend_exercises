@@ -32,7 +32,7 @@ fp.push(['Dec 30, 2020', 'progress_bar', 'Progress Bar']);
 fp.push(['Dec 29, 2020', 'expanding_cards', 'Expanding Cards']);
 
 
-ap.push(['Jan 21, 2021', 'dist/portfolio_pjt', 'Portfolio Website'])
+ap.push(['Jan 21, 2021', 'portfolio_pjt/dist', 'Portfolio Website'])
 ap.push(['Jan 17, 2021', 'presentation_website', 'Presentation Website'])
 ap.push(['Jan 14, 2021', 'task_list', 'Task List App'])
 ap.push(['Jan 10, 2021', 'edge_ledger', 'Edge Ledger Website'])
