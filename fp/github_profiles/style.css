@@ -78,11 +78,11 @@ body {
     max-width: 400px;
 }
 
-.user-ino ul li {
+.user-info ul li {
     display: flex;
     align-items: center;
 }
-.user-ino ul li strong {
+.user-info ul li strong {
     font-size: 0.9rem;
     margin-left: 0.5rem;
 }
