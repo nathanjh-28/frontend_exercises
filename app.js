@@ -6,6 +6,7 @@ const fp = []; const ap = [];
 
 // TEMPLATE - (  [  DATE  ,  DIRNAME  ,  TITLE  ]  )
 
+fp.push(['Jan 31, 2021', 'good_cheap_fast_checkboxes', 'G/C/F Checkboxes']);
 fp.push(['Jan 30, 2021', 'password_generator', 'Password Generator']);
 fp.push(['Jan 29, 2021', 'auto_text_effect', 'Auto Text Effect']);
 fp.push(['Jan 27, 2021', 'double_heart_click', 'Double Heart Click']);
