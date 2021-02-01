@@ -1,5 +1,11 @@
 const addBtn = document.getElementById('add')
 
+const notes = JSON.parse(localStorage.getItem('notes'))
+
+if(notes){
+    notes.forEach(note => addNewNote(note))
+}
+
 addBtn.addEventListener('click',()=>{
     addNewNote()
 })
@@ -27,6 +33,7 @@ function addNewNote(text = '') {
 
     deleteBtn.addEventListener('click',()=>{
         note.remove()
+        updateLS()
     })
     editBtn.addEventListener('click',()=>{
         main.classList.toggle('hidden')
@@ -36,7 +43,25 @@ function addNewNote(text = '') {
     textArea.addEventListener('input',(e)=>{
         const { value } = e.target
         main.innerHTML = marked(value)
+        updateLS()
     })
 
     document.body.appendChild(note)
 }
+
+
+function updateLS(){
+    const notesText = document.querySelectorAll('textarea')
+    const notes = []
+    notesText.forEach(note =>{
+        notes.push(note.value)
+    })
+    // console.log(notes)
+    localStorage.setItem('notes', JSON.stringify(notes))
+}
+
+
+// Only store strings in local storage, you can use JSON.stringify to turn something in to a string and JSON.parse to take it from a string to whatever you need.  
+// localStorage.setItem('name','Brad')
+// console.log(localStorage.getItem('name'))
+// localStorage.removeItem('name')
