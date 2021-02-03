@@ -6,6 +6,7 @@ const fp = []; const ap = [];
 
 // TEMPLATE - (  [  DATE  ,  DIRNAME  ,  TITLE  ]  )
 
+fp.push(['Feb 3, 2021', 'image_carousel', 'Image Carousel']);
 fp.push(['Feb 2, 2021', 'animated_countdown', 'Animated Countdown']);
 fp.push(['Feb 1, 2021', 'notes_app', 'Notes App with LS']);
 fp.push(['Jan 31, 2021', 'good_cheap_fast_checkboxes', 'G/C/F Checkboxes']);
