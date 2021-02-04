@@ -18,12 +18,12 @@ body {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    max-width: 400px;
+    max-width: 500px;
 }
 
 .square {
     background-color: #1d1d1d;
-    box-shadow: 0 0 2px #0000;
+    box-shadow: 0 0 2px #000;
     height: 16px;
     width: 16px;
     margin: 2px;
