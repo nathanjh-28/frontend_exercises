@@ -1,3 +1,18 @@
+
+// Playing with local JSON file
+
+const getData = async () =>{
+    const res = await fetch('data.json')
+    const data = await res.json()
+    return data
+} 
+
+const data = getData()
+.then((data)=>{
+    console.log(data)
+})
+
+
 const pjtSection = document.querySelector('#project50')
 const addPrjts = document.querySelector('#add-Prjts')
 const fp = []; const ap = [];
@@ -6,6 +21,7 @@ const fp = []; const ap = [];
 
 // TEMPLATE - (  [  DATE  ,  DIRNAME  ,  TITLE  ]  )
 
+fp.push(['Feb 5, 2021', 'pokedex', 'Pokedex']);
 fp.push(['Feb 4, 2021', 'hoverboard', 'Hoverboard']);
 fp.push(['Feb 3, 2021', 'image_carousel', 'Image Carousel']);
 fp.push(['Feb 2, 2021', 'animated_countdown', 'Animated Countdown']);
