@@ -77,21 +77,14 @@ document.getElementById('book-form').addEventListener('submit',(e)=>{
         // Clear Fields
         ui.clearFields()
     }
-
-
-
     e.preventDefault();
 })
 
 // Event listener for delete
 
 document.getElementById('book-list').addEventListener('click',(e)=>{
-    
     const ui = new UI()
     ui.deleteBook(e.target)
     ui.showAlert('book deleted','success')
-    
-    
     e.preventDefault()
-
 })
