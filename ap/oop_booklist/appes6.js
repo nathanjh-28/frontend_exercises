@@ -7,6 +7,11 @@ class Book {
 }
 
 class UI {
+    // static practice
+    static name = 'nathanzzz'
+    static greeting(){
+        return `Hello ${UI.name}!`
+    }
     addBookToList(book){
         const list = document.getElementById('book-list')
         // Create tr
@@ -43,6 +48,15 @@ class UI {
     }
 }
 
+// Inheritence practice
+
+class Magazine extends Book {
+    constructor(title,author,isbn,series){
+        super(title,author,isbn)
+        this.series = series
+    }
+}
+
 document.getElementById('book-form').addEventListener('submit',(e)=>{
     // get form values
     const title = document.getElementById('title').value,
@@ -76,3 +90,10 @@ document.getElementById('book-list').addEventListener('click',(e)=>{
     ui.showAlert('book deleted','success')
     e.preventDefault()
 })
+
+console.log(UI.greeting())
+console.log(UI.name)
+
+const mag = new Magazine('Time','John Doe',1234,'3rd Edition')
+console.log(mag)
+console.log(Object.getPrototypeOf(mag))
