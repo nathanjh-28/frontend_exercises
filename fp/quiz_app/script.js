@@ -10,7 +10,7 @@ const quizData = [
         question: "Can Texas legally fly the state flag at the same height as the United States?",
         a: "Yes",
         b: "No",
-        c: "Sometimes",
+        c: "It depends",
         d: "N/A",
         correct: "a",
     }, {
@@ -21,11 +21,11 @@ const quizData = [
         d: "Mirabeau B Lamar",
         correct: "d",
     }, {
-        question: "Who was the first Anglo-American to receive permission to settle people in Texas, but died before he got the chance",
-        a: "Sam Houston",
-        b: "Moses Austin",
-        c: "Stephen F Austin",
-        d: "Mirabeau B Lamar",
+        question: "Which lake in Texas is the only natural lake, rather than man made?",
+        a: "Lake Travis",
+        b: "Lake Texoma",
+        c: "Lady Bird Lake",
+        d: "Caddo Lake",
         correct: "b",
     },
 ];
@@ -84,8 +84,10 @@ submitBtn.addEventListener('click', () => {
     }
     else {
         quiz.innerHTML = `
+        <br>
         <h2> You answered correctly at ${score} / ${quizData.length} questions. </h2>
-        <button onclick="location.reload()">Reload</button>"
+        <br>
+        <button onclick="location.reload()">Reload</button>
         `
     }
 })
