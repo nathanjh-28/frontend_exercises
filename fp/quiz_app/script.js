@@ -26,7 +26,7 @@ const quizData = [
         b: "Lake Texoma",
         c: "Lady Bird Lake",
         d: "Caddo Lake",
-        correct: "b",
+        correct: "d",
     },
 ];
 
