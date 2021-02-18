@@ -66,3 +66,22 @@ h3 a:hover{
 .box a:hover {
     color: #81C4E1;
 }
+
+.header-drawer {
+    position: relative;
+}
+
+.drawer-btn {
+    right: 5%;
+    position: absolute;
+    cursor: pointer;
+}
+.hidden {
+    display: none;
+}
+
+@media(max-width:768px){
+    h2 {
+        font-size: 1rem;
+    }
+}

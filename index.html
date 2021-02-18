@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Front End Practice</title>
-
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
 
     <script defer src="app.js"></script>
@@ -16,16 +19,25 @@
     <h1>Frontend Practice Projects</h1>
     <h3>by <a href="http://nathanjharris.com"> Nathan J Harris</a></h3>
 
-    <h2>50 projects 50 days Course - Mini Projects</h2>
-    
+    <h2 class="header-drawer">50 projects 50 days Course - Mini Projects
+
+        <i class="fa fa-times drawer-btn" id="close-fifty"></i>
+        <i class="fa fa-chevron-down drawer-btn hidden" id="open-fifty"></i>
+
+    </h2>
+
     <div class="container">
-        <div id="project50">
+        <div id="project50" class="">
 
             <!-- 50 Projects go here -->
 
         </div>
-    
-        <h2>Additional Projects</h2>
+
+        <h2 class="header-drawer">Additional Projects
+
+            <i class="fa fa-times drawer-btn" id="close-addPjts"></i>
+            <i class="fa fa-chevron-down drawer-btn hidden" id="open-addPjts"></i>
+        </h2>
         <div id="add-Prjts">
 
             <!-- additional projects go here -->

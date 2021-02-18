@@ -4,21 +4,21 @@ const addPrjts = document.querySelector('#add-Prjts')
 
 // Getting Data
 
-const getData = async () =>{
+const getData = async () => {
     const res = await fetch('data.json')
     const data = await res.json()
     return data
-} 
+}
 
 // Populate DOM
 const data = getData()
-.then((data)=>{
-    fiftyProjects(data.fp)
-    additionalProjects(data.ap)
-})
+    .then((data) => {
+        fiftyProjects(data.fp)
+        additionalProjects(data.ap)
+    })
 
 //  Loop through and Make Cards
-function fiftyProjects(data){
+function fiftyProjects(data) {
     data.forEach((prjt, idx) => {
         let el = document.createElement('div')
         el.classList.add('box')
@@ -28,7 +28,7 @@ function fiftyProjects(data){
         pjtSection.appendChild(el)
     })
 }
-function additionalProjects(data){
+function additionalProjects(data) {
     data.forEach((prjt, idx) => {
         let el = document.createElement('div')
         el.classList.add('box')
@@ -39,5 +39,34 @@ function additionalProjects(data){
     })
 }
 
+// Show Hide Functionality
 
+const closeFifty = document.getElementById('close-fifty')
+const openFifty = document.getElementById('open-fifty')
 
+closeFifty.addEventListener('click', () => {
+    pjtSection.classList.add('hidden')
+    openFifty.classList.remove('hidden')
+    closeFifty.classList.add('hidden')
+})
+
+openFifty.addEventListener('click', () => {
+    pjtSection.classList.remove('hidden')
+    closeFifty.classList.remove('hidden')
+    openFifty.classList.add('hidden')
+})
+
+const closeAddPjts = document.getElementById('close-addPjts')
+const openAddPjts = document.getElementById('open-addPjts')
+
+closeAddPjts.addEventListener('click', () => {
+    addPrjts.classList.add('hidden')
+    openAddPjts.classList.remove('hidden')
+    closeAddPjts.classList.add('hidden')
+})
+
+openAddPjts.addEventListener('click', () => {
+    addPrjts.classList.remove('hidden')
+    closeAddPjts.classList.remove('hidden')
+    openAddPjts.classList.add('hidden')
+})
