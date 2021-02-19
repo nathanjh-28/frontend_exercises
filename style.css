@@ -23,13 +23,17 @@ h2 {
     max-width:800px;
 }
 
+.description {
+    margin-top: 0;
+}
+
 h1, h3 {
     background-color: transparent;
     color: #333;
     margin: 0;
 }
 
-h3 a:hover{
+h3 a:hover, p a:hover{
     color: #fff;
 }
 
