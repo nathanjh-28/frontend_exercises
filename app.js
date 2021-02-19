@@ -70,3 +70,19 @@ openAddPjts.addEventListener('click', () => {
     closeAddPjts.classList.remove('hidden')
     openAddPjts.classList.add('hidden')
 })
+
+const closeReact = document.getElementById('close-react')
+const openReact = document.getElementById('open-react')
+const pjtReact = document.getElementById('project-react')
+
+closeReact.addEventListener('click', () => {
+    pjtReact.classList.add('hidden')
+    openReact.classList.remove('hidden')
+    closeReact.classList.add('hidden')
+})
+
+openReact.addEventListener('click', () => {
+    pjtReact.classList.remove('hidden')
+    closeReact.classList.remove('hidden')
+    openReact.classList.add('hidden')
+})
