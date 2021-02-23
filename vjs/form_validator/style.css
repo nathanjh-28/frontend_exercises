@@ -90,3 +90,6 @@ h2 {
     padding: 10px;
     width: 100%;
 }
+.form button:focus {
+    outline: none;
+}

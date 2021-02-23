@@ -20,30 +20,53 @@ function isValidEmail(email) {
     const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(String(email).toLowerCase());
 }
+
+function checkRequired(inputArr) {
+    inputArr.forEach(input => {
+        if (input.value.trim() === '') {
+            showErr(input, `${getFieldName(input)} is required`);
+        } else {
+            showSuccess(input);
+        }
+    });
+
+}
+
+function getFieldName(input) {
+    return input.id.charAt(0).toUpperCase() + input.id.slice(1);
+}
+
 // Event Listeners
 form.addEventListener('submit', function (e) {
     e.preventDefault()
-    if (username.value === '') {
-        showErr(username, 'Username is required')
-    } else {
-        showSuccess(username);
-    }
-    if (email.value === '') {
-        showErr(email, 'Email is required')
-    } else if (!isValidEmail(email.value)) {
-        showErr(email, 'Email is not Valid')
-    } else {
-        showSuccess(email);
-    }
-    if (password.value === '') {
-        showErr(password, 'Password is required')
-    } else {
-        showSuccess(password);
-    }
-    if (password2.value === '') {
-        showErr(password2, 'Confirm Password is required')
-    } else {
-        showSuccess(password2);
-    }
+    checkRequired([username, email, password, password2]);
 
 })
+
+// ====== First version before Refactor
+
+// form.addEventListener('submit', function (e) {
+//     e.preventDefault()
+//     if (username.value === '') {
+//         showErr(username, 'Username is required')
+//     } else {
+//         showSuccess(username);
+//     }
+//     if (email.value === '') {
+//         showErr(email, 'Email is required')
+//     } else if (!isValidEmail(email.value)) {
+//         showErr(email, 'Email is not Valid')
+//     } else {
+//         showSuccess(email);
+//     }
+//     if (password.value === '') {
+//         showErr(password, 'Password is required')
+//     } else {
+//         showSuccess(password);
+//     }
+//     if (password2.value === '') {
+//         showErr(password2, 'Confirm Password is required')
+//     } else {
+//         showSuccess(password2);
+//     }
+// })
