@@ -253,6 +253,16 @@
     ],
     "ap": [
         [
+            "Feb 24, 2021",
+            "vjs/movie_seat_booking",
+            "Movie Seat Booking"
+        ],
+        [
+            "Feb 23, 2021",
+            "vjs/form_validator",
+            "Vanilla Form Validator"
+        ],
+        [
             "Feb 12, 2021",
             "hello_wipe",
             "Hello Wipe"
