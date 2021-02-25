@@ -181,8 +181,9 @@
 }
 .menu ul li a:hover {
     color:var(--overlay-color);
+}
 
-@media (max-width:991px){
+@media (max-width:898px){
     .showcase, .showcase header {
         padding: 40px;
     }
@@ -193,4 +194,5 @@
         font-size: 2em;
     }
 }
+
 
