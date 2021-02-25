@@ -30,12 +30,22 @@ function fiftyProjects(data) {
 }
 function additionalProjects(data) {
     data.forEach((prjt, idx) => {
-        let el = document.createElement('div')
-        el.classList.add('box')
-        el.innerHTML = `<h4>${prjt[0]}</h4>
-        <h4><a href="ap/${prjt[1]}/index.html">
-        ${prjt[2]}</a></h4>`
-        addPrjts.appendChild(el)
+        if (prjt[3]) {
+            let el = document.createElement('div')
+            el.classList.add('box')
+            el.innerHTML = `<h4>${prjt[0]}</h4>
+            <h4><a href=${prjt[3]}>
+            ${prjt[2]}</a></h4>`
+            addPrjts.appendChild(el)
+        } else {
+            let el = document.createElement('div')
+            el.classList.add('box')
+            el.innerHTML = `<h4>${prjt[0]}</h4>
+            <h4><a href="ap/${prjt[1]}/index.html">
+            ${prjt[2]}</a></h4>`
+            addPrjts.appendChild(el)
+        }
+
     })
 }
 
