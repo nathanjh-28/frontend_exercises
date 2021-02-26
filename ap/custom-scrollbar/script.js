@@ -12,13 +12,16 @@ bar.style.height = `${maxPos}px`
 console.log(maxPos)
 
 window.addEventListener('scroll', (e) => {
-    const marker = window.scrollY
-    console.log(scrollHeight, marker)
-    const thumbPosition = scale(marker, 0, scrollHeight, 0, maxPos)
-    // if (thumbPosition > maxPos) {
-    //     thumbPosition = 300
-    // }
-    thumb.style.top = `${thumbPosition}px`
+    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight
+    const scrolled = (winScroll / height) * 100;
+    thumb.style.height = `${scrolled}%`
+    console.log(winScroll)
+    // const marker = window.scrollY
+    // console.log(scrollHeight, marker)
+    // const thumbPosition = scale(marker, 0, scrollHeight, 0, maxPos)
+    // console.log(thumbPosition)
+    // thumb.style.top = `${thumbPosition}px`
 
 })
 

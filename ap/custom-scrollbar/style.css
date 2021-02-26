@@ -39,12 +39,12 @@ body {
     overflow: hidden;
 }
 .thumb {
-    height: 200px;
+    height: 0;
     width: 2px;
     background-color: red;
     position: absolute;
     top: 0px;
-    transform: translateY(-200px);
+    /* transform: translateY(-200px); */
     border-radius: 10px;
 }
 
