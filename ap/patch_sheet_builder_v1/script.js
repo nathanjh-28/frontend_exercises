@@ -88,8 +88,41 @@ document.querySelector('form').addEventListener('submit', (e) => {
     document.getElementById('data').appendChild(deviceEl)
     localStorage.setItem('patch_sheet', JSON.stringify(document.getElementById('data').innerHTML))
 
-    // clear form
+})
 
+// --- make csv script
 
+function download_csv(csv, filename) {
 
+    const csvFile = new Blob([csv], { type: "text/csv" });
+    const downloadLink = document.createElement('a');
+
+    downloadLink.download = filename;
+
+    downloadLink.href = window.URL.createObjectURL(csvFile);
+
+    downloadLink.style.display = "none";
+
+    document.body.appendChild(downloadLink);
+
+}
+
+function export_table_to_csv(html, filename) {
+    const csv = [];
+    const rows = document.querySelectorAll('table tr');
+
+    for (let i = 0; i < rows.length; i++) {
+        let row = [];
+        let cols = rows[i].querySelectorAll('td,th');
+        for (let j = 0; j < cols.length; j++) {
+            row.push(cols[j].innerText);
+        }
+        csv.push(row.join(","))
+    }
+    download_csv(csv.join("\n"), filename)
+}
+
+document.querySelector('.download-btn').addEventListener('click', () => {
+    const html = document.querySelector('table').outerHTML;
+    export_table_to_csv(html, "table.csv")
 })
