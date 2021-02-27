@@ -41,8 +41,6 @@ form {
     padding: .5rem;
     border-radius: 10px;
     margin: .5rem;
-    position: fixed;
-    top: 100px;
     cursor: pointer;
 }
 table {
