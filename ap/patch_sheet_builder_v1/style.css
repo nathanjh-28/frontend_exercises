@@ -29,6 +29,11 @@ form {
     margin-bottom: 10px;
 
 }
+
+.form-control * {
+    display: block;
+}
+
 .button {
     background-color: red;
     color: #fff;
@@ -39,4 +44,10 @@ form {
     position: fixed;
     top: 100px;
     cursor: pointer;
+}
+table {
+    padding: 1rem;
+}
+td,th {
+    padding: 1rem;
 }

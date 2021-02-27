@@ -1,3 +1,4 @@
+let batchNum;
 
 function getFormData() {
     const quantity = document.getElementById('quantity')
@@ -9,7 +10,10 @@ function getFormData() {
     const uni = document.getElementById('uni')
     const address = document.getElementById('address')
 
+    const tableRows = document.querySelectorAll('tr')
+
     const obj = {
+        batch_num: tableRows.length,
         quantity: quantity.value,
         location: location.value,
         device: device.value,
@@ -43,6 +47,7 @@ function updateData() {
     const tableData = JSON.parse(localStorage.getItem('patch_sheet'))
     if (!tableData) {
         dataEl.innerHTML = `            <tr>
+        <th>Batch # </th>
         <th>Qty</th>
         <th>Location</th>
         <th>Device</th>
@@ -69,6 +74,8 @@ document.querySelector('form').addEventListener('submit', (e) => {
     const device = getFormData()
     const deviceEl = document.createElement('tr')
     deviceEl.innerHTML = `
+
+    <td>${device.batch_num}</td>
     <td>${device.quantity}</td>
     <td>${device.location}</td>
     <td>${device.device}</td>
