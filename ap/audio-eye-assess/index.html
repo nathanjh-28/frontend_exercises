@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility</title>
+
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .btn {
+            background-color: #000;
+            color: #fff;
+            padding: 1rem;
+            display: inline-block;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+
+        .btn:focus {
+            outline: 10px solid red;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="btn">
+        Click Me
+    </div>
+
+    <h1></h1>
+    <h2></h2>
+    <h3></h3>
+    <h4></h4>
+    <h5></h5>
+    <h6></h6>
+
+    <script>
+        function makeEventListener() {
+            const div = document.querySelector('div')
+            div.setAttribute('tabindex', "0")
+            div.setAttribute('role', 'button')
+            div.setAttribute('aria-label', 'Click Me Button')
+            function eventHandler() {
+                alert('I have been clicked!')
+            }
+            div.addEventListener('click', eventHandler)
+            div.addEventListener('keydown', (e) => {
+                if (e.code === 'Space' || e.code === 'Enter') eventHandler()
+            })
+        }
+        makeEventListener()
+
+
+        function setPresentationRole() {
+            const headings = document.querySelectorAll('h1,h2,h3,h4,h5,h6')
+            headings.forEach(heading => {
+                if (heading.innerHTML === '') {
+                    heading.setAttribute('role', 'presentation')
+                }
+            })
+        }
+        setPresentationRole()
+
+
+        function countdown(num1, num2) {
+            let sum = num1 + num2;
+            const timer = setInterval(timerFunc, 1000)
+            function timerFunc() {
+                if (sum < 0) {
+                    clearInterval(timer);
+                } else {
+                    console.log(sum)
+                    sum--
+                }
+            }
+        }
+        countdown(2, 2);
+
+    </script>
+</body>
+
+</html>
