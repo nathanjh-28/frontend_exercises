@@ -100,8 +100,9 @@ function download_csv(csv, filename) {
     downloadLink.download = filename;
 
     downloadLink.href = window.URL.createObjectURL(csvFile);
+    downloadLink.innerText = 'Download'
 
-    downloadLink.style.display = "none";
+    // downloadLink.style.display = "none";
 
     document.body.appendChild(downloadLink);
 
