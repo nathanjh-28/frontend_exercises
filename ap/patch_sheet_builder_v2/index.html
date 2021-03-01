@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" /> -->
+
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Javascript Source -->
+    <script defer src="script.js"></script>
+
+    <title>Patch Sheet Builder</title>
+
+</head>
+
+<body>
+    <button class="button" id="reset-button">Reset All</button>
+
+    <div class="devices-added">
+        <h1>Patch Sheet Builder Version 0.2</h1>
+        <h3>Automate address numbering</h3>
+
+
+
+    </div>
+    <form>
+        <div class="form-control">
+            <label for="quantity">Quantity</label>
+            <input type="text" id="quantity" class="input-clear">
+        </div>
+        <div class="form-control">
+            <label for="location">Location</label>
+            <input type="text" id="location" class="input-clear">
+        </div>
+        <div class="form-control">
+            <label for="device">Device</label>
+            <input type="text" id="device" class="input-clear">
+        </div>
+        <div class="form-control">
+            <label for="mode">Mode</label>
+            <input type="text" id="mode" class="input-clear">
+        </div>
+        <div class="form-control">
+            <label for="footprint">DMX Footprint</label>
+            <input type="text" id="footprint" class="input-clear">
+        </div>
+        <div class="form-control">
+            <label for="fix_id">Start Fixture ID</label>
+            <input type="text" id="fix_id" class="input-clear">
+        </div>
+        <div class="form-control">
+            <label for="uni">Start Universe</label>
+            <input type="text" id="uni" class="input-clear">
+        </div>
+        <div class="form-control">
+            <label for="address">Start Address</label>
+            <input type="text" id="address" class="input-clear">
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+
+    <table id="data" style="display: none;">
+        <!-- <tr>
+            <th>Batch # </th>
+            <th>Qty</th>
+            <th>Location</th>
+            <th>Device</th>
+            <th>Mode</th>
+            <th>Footprint</th>
+            <th>Start Fixture Id</th>
+            <th>Start Universe</th>
+            <th>Start Address</th>
+        </tr> -->
+    </table>
+
+    <table id="patch-sheet-preview">
+        <tr>
+            <th>Fixture ID</th>
+            <th>Uni</th>
+            <th>Address</th>
+            <th>Device</th>
+            <th>Mode</th>
+            <th>Location</th>
+        </tr>`;
+    </table>
+
+</body>
+
+</html>
