@@ -49,27 +49,27 @@ function resetEverything() {
     updateData()
 }
 
-function updateData() {
-    const dataEl = document.getElementById('data')
-    const tableData = JSON.parse(localStorage.getItem('patch_sheet'))
-    if (!tableData) {
-        dataEl.innerHTML = `            <tr>
-        <th>Batch # </th>
-        <th>Qty</th>
-        <th>Location</th>
-        <th>Device</th>
-        <th>Mode</th>
-        <th>Footprint</th>
-        <th>Start Fixture Id</th>
-        <th>Start Universe</th>
-        <th>Start Address</th>
-    </tr>`;
-    } else {
-        dataEl.innerHTML = tableData
-    }
+// function updateData() {
+//     const dataEl = document.getElementById('data')
+//     const tableData = JSON.parse(localStorage.getItem('patch_sheet'))
+//     if (!tableData) {
+//         dataEl.innerHTML = `            <tr>
+//         <th>Batch # </th>
+//         <th>Qty</th>
+//         <th>Location</th>
+//         <th>Device</th>
+//         <th>Mode</th>
+//         <th>Footprint</th>
+//         <th>Start Fixture Id</th>
+//         <th>Start Universe</th>
+//         <th>Start Address</th>
+//     </tr>`;
+//     } else {
+//         dataEl.innerHTML = tableData
+//     }
 
-}
-updateData()
+// }
+// updateData()
 
 
 document.querySelector('form').addEventListener('submit', (e) => {
