@@ -1,5 +1,5 @@
 
-To Do - edit and delete, form validation, UI decisions, error message decisions
+To Do - edit and delete, form validation, UI decisions, error message decisions, rearrange patch sheets based on address or fixture ID
 
 App State and LS
 
@@ -9,6 +9,7 @@ App State and LS
 - Array for Patch Sheet Preview
 - JSON string of Batch Table (optional?)
 - JSON string of Patch Sheet preview (optional?)
+- showname?
 
 Functions
 
@@ -69,7 +70,9 @@ Web Components
 - Nav Bar with buttons (clear form, etc)
 - Batch form
 - Edit Batch form
-- Header Form
+- Header Form or is this the Batch Name?  or Name field
 - Batch Table - edit and delete buttons
 - Patch Sheet Preview
 - Instructions
+- submit a comment, feature suggestions, bugs, etc.  
+- form for show name and heading for it as well (this could also appear in the csv filename)

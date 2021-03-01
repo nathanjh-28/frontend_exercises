@@ -40,8 +40,8 @@ function clearFormData() {
     })
 }
 
-const resetBtn = document.getElementById('reset-button')
-resetBtn.addEventListener('click', resetEverything)
+// const resetBtn = document.getElementById('reset-button')
+// resetBtn.addEventListener('click', resetEverything)
 
 function resetEverything() {
     localStorage.removeItem('patch_sheet')
