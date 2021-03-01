@@ -1,0 +1,75 @@
+
+To Do - edit and delete, form validation, UI decisions, error message decisions
+
+App State and LS
+
+- sorted Array of used Fixture IDs
+- sorted Array of used Addresses
+- Array of batch list
+- Array for Patch Sheet Preview
+- JSON string of Batch Table (optional?)
+- JSON string of Patch Sheet preview (optional?)
+
+Functions
+
+updateBatchTable (runs on page load)
+    - grabs Batch table Element from DOM
+    - grabs data from local localStorage
+    - generates table from batch list data
+
+updatePatchSheetArr
+    - grabs batch list data
+    - creates PatchRows Array
+    - for loop to iterate PatchRow arrays in to a PatchRows array
+        - conditions for patch conflict
+        - conditions for empty data
+        - conditions for addresses that fall outside of 512
+        - update FixtureIDsarray, and Addresses Array
+    - Put PatchSheetArr in LS
+
+
+createPatchListPreview
+    - deletes current patch sheet preview table
+    - grab PatchSheetArr
+    - populate table with data
+    - append to the DOM
+    
+
+getFormData:
+    When someone submits the form it...
+        - creates an object (or an array) of form data
+        - clears form with clearFormData
+        - returns object (or array)
+
+clearFormData
+    - grabs all form contents and clears them
+
+
+Event Listeners and Handlers
+    - ClearBatch
+        - clears batch table and LS
+        - clears patch sheet preview
+
+    -submit form
+        - e.preventDefault
+        - create a batch variable and run getFormData
+        - add to array of batchlist
+        - update LS
+        - run updatePatchSheetArr
+        - run UpdateBatchTable
+
+    - generate Patch Preview
+        - runs create Patch Preview
+    
+    - generate CSV 
+        - creates download link for CSV from table data
+
+
+Web Components
+- Nav Bar with buttons (clear form, etc)
+- Batch form
+- Edit Batch form
+- Header Form
+- Batch Table - edit and delete buttons
+- Patch Sheet Preview
+- Instructions
