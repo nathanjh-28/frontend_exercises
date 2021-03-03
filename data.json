@@ -253,6 +253,11 @@
     ],
     "ap": [
         [
+            "March 2, 2021",
+            "loan_calc",
+            "Loan Calculator"
+        ],
+        [
             "March 1, 2021",
             "patch_sheet_builder_v2",
             "Patch Sheet Builder v0.2"
