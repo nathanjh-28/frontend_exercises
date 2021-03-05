@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -13,11 +13,14 @@ body {
     height: 100vh; 
     overflow: hidden; 
     margin: 0; 
-} */
+}
 
 .grid {
     display: flex;
     flex-wrap: wrap;
     height: 300px;
     width: 400px;
+}
+img {
+    cursor: pointer;
 }
