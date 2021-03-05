@@ -1,3 +1,15 @@
+const instructions = "Click on a card and find it's match";
+const greeting = document.querySelector('h2')
+function changeGreeting(message, type) {
+    message = message.toUpperCase()
+    greeting.innerText = message;
+    greeting.className = type;
+    setTimeout(() => {
+        greeting.innerText = instructions;
+        greeting.className = '';
+    }, 2000)
+}
+
 
 const cardArray = [
     {
@@ -73,20 +85,21 @@ function checkForMatch() {
     const optionOneId = cardsChosenId[0];
     const optionTwoId = cardsChosenId[1];
     if (cardsChosen[0] === cardsChosen[1]) {
-        alert('you found a match');
+        changeGreeting('you found a match', 'green');
         cards[optionOneId].setAttribute('src', 'img/white.png');
         cards[optionTwoId].setAttribute('src', 'img/white.png');
         cardsWon.push(cardsChosen);
     } else {
         cards[optionOneId].setAttribute('src', 'img/card.jpg');
         cards[optionTwoId].setAttribute('src', 'img/card.jpg');
-        alert('Sorry try again')
+        changeGreeting('Sorry try again', 'red')
     }
     cardsChosen = []
     cardsChosenId = []
     resultDisplay.textContent = cardsWon.length;
     if (cardsWon.length === cardArray.length / 2) {
-        resultDisplay.textContent = 'Congratulations!  You found them all!'
+        resultDisplay.textContent = 'Congratulations!  You found them all!';
+        changeGreeting('you win!', 'green');
     }
 }
 
