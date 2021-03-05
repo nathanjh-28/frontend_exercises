@@ -102,8 +102,8 @@ function checkForMatch() {
     cardsChosenId = []
     resultDisplay.textContent = cardsWon.length;
     if (cardsWon.length === cardArray.length / 2) {
-        resultDisplay.textContent = 'Congratulations!  You found them all!';
-        changeGreeting('you win!', 'green');
+        greeting.remove()
+        document.getElementById('win').style.display = 'block';
     }
 }
 
@@ -115,7 +115,6 @@ function flipCard() {
     if (cardsChosen.length === 2) {
         setTimeout(checkForMatch, 500)
     }
-
 }
 
 
