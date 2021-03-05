@@ -89,6 +89,10 @@ function checkForMatch() {
         cards[optionOneId].setAttribute('src', 'img/white.png');
         cards[optionTwoId].setAttribute('src', 'img/white.png');
         cardsWon.push(cardsChosen);
+        cards[optionOneId].removeEventListener('click', flipCard);
+        cards[optionTwoId].removeEventListener('click', flipCard);
+        cards[optionOneId].style.cursor = 'default'
+        cards[optionTwoId].style.cursor = 'default'
     } else {
         cards[optionOneId].setAttribute('src', 'img/card.jpg');
         cards[optionTwoId].setAttribute('src', 'img/card.jpg');
