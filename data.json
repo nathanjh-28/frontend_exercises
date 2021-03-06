@@ -253,6 +253,11 @@
     ],
     "ap": [
         [
+            "March 6, 2021",
+            "connect_four",
+            "Connect Four"
+        ],
+        [
             "March 5, 2021",
             "whack_a_mole",
             "Whack-A-Mole!"
