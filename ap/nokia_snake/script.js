@@ -15,33 +15,21 @@ let interval = 0;
 
 function control(e) {
     squares[currentIndex].classList.remove('snake');
-    if (e.keycode === 39) {
+    // console.log(e)
+    if (e.code === "ArrowRight") {
         direction = 1; // right arrow
         console.log('move right')
-    } else if (e.keycode === 38) {
+    } else if (e.code === "ArrowUp") {
         direction = -width; // up arrow
         console.log('move up')
-    } else if (e.keycode === 37) {
+    } else if (e.code === "ArrowLeft") {
         direction = -1; // left arrow
         console.log('move left')
-    } else if (e.keycode === 40) {
+    } else if (e.code === "ArrowDown") {
         direction = +width; // down arrow
         console.log('move down')
     }
 }
 document.addEventListener('keyup', (e) => {
-    squares[currentIndex].classList.remove('snake');
-    if (e.keyCode === 39) {
-        direction = 1; // right arrow
-        console.log('move right')
-    } else if (e.keyCode === 38) {
-        direction = -width; // up arrow
-        console.log('move up')
-    } else if (e.keyCode === 37) {
-        direction = -1; // left arrow
-        console.log('move left')
-    } else if (e.keyCode === 40) {
-        direction = +width; // down arrow
-        console.log('move down')
-    }
-})
+    control(e)
+});
