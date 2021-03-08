@@ -60,7 +60,6 @@ function moveOutcomes() {
     squares[currentSnake[0]].classList.add('snake');
 }
 
-startBtn.addEventListener('click', startGame)
 
 function randomApple() {
     do {
@@ -89,3 +88,4 @@ function control(e) {
 document.addEventListener('keyup', (e) => {
     control(e)
 });
+startBtn.addEventListener('click', startGame)

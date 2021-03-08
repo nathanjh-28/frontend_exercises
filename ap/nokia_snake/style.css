@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 * {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 body {
@@ -34,4 +34,7 @@ body {
 
 .apple {
     background-color: purple;
+}
+h1, button {
+    margin-bottom: 10px;
 }
