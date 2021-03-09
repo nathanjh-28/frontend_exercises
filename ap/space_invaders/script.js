@@ -80,6 +80,10 @@ function moveInvaders() {
             clearInterval(invaderId)
         }
     }
+    if (alienInvadersTakenDown.length === alienInvaders.length) {
+        resultDisplay.textContent = 'You Win';
+        clearInterval(invaderId)
+    }
 }
 invaderId = setInterval(moveInvaders, 500);
 
@@ -115,11 +119,12 @@ function shoot(e) {
             setTimeout(() => squares[currentLaserIndex].classList.remove('laser'), 100);
         }
     }
-    document.addEventListener('keyup', e => {
-        if (e.keyCode === 32) {
-            laserId = setInterval(moveLaser, 100);
-        }
-    })
+
+    switch (e.keyCode) {
+        case 32:
+            laserId = setInterval(moveLaser, 100)
+            break
+    }
 }
 
 document.addEventListener('keyup', shoot);
