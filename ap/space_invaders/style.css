@@ -42,3 +42,8 @@ body {
 .laser {
     background-color: yellow;
 }
+
+.instructions {
+    text-align: center;
+    max-width: 400px;
+}
