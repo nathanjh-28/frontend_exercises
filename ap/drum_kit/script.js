@@ -1,10 +1,6 @@
 const key_divs = document.querySelectorAll('.key')
+const audioEls = document.querySelectorAll('audio')
 
-window.addEventListener('keydown', (e) => {
-    addPlaying(e.keyCode);
-    //playSound(e.keyCode);
-    setTimeout(removePlaying, 100);
-});
 
 function addPlaying(code) {
     key_divs.forEach(div => {
@@ -17,3 +13,18 @@ function addPlaying(code) {
 function removePlaying() {
     key_divs.forEach(div => div.classList.remove('playing'))
 }
+
+function playSound(code) {
+    audioEls.forEach(audio => {
+        audio.pause()
+        audio.currentTime = 0;
+        if (+audio.getAttribute('data-key') === code) {
+            audio.play()
+        }
+    })
+}
+window.addEventListener('keydown', (e) => {
+    addPlaying(e.keyCode);
+    playSound(e.keyCode);
+    setTimeout(removePlaying, 100);
+});
