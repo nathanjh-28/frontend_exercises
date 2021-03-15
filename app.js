@@ -49,6 +49,12 @@ function additionalProjects(data) {
     })
 }
 
+function howManyProjects() {
+    console.log(
+        document.querySelectorAll('#add-Prjts div').length + document.querySelectorAll('#project50 div').length + 4
+    )
+}
+
 // Show Hide Functionality
 
 const closeFifty = document.getElementById('close-fifty')
