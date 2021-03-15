@@ -18,5 +18,6 @@ function breathAnimation() {
 
 }
 
+breathAnimation()
 setInterval(breathAnimation, totalTime)
 
