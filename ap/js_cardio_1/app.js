@@ -39,10 +39,12 @@ const fifteenInventors = inventors.filter(inventor => {
 const mappedInventors = inventors.map(inventor => {
     return [inventor.first, inventor.last]
 })
-console.table(mappedInventors)
+// console.table(mappedInventors)
 
 // Array.prototype.sort()
 // 3. Sort the inventors by birthdate, oldest to youngest
+const sortedInventors = inventors.sort((a, b) => a.year - b.year)
+console.table(sortedInventors)
 
 // Array.prototype.reduce()
 // 4. How many years did all the inventors live all together?
