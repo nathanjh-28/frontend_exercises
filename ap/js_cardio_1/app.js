@@ -30,11 +30,16 @@ const people = [
 const fifteenInventors = inventors.filter(inventor => {
     if (inventor.year > 1500 && inventor.year < 1600) return inventor;
 })
-console.table(fifteenInventors);
+// console.table(fifteenInventors);
 
 
 // Array.prototype.map()
 // 2. Give us an array of the inventors first and last names
+
+const mappedInventors = inventors.map(inventor => {
+    return [inventor.first, inventor.last]
+})
+console.table(mappedInventors)
 
 // Array.prototype.sort()
 // 3. Sort the inventors by birthdate, oldest to youngest
